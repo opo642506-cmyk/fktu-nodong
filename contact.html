@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>문의 — 한국노총 노동연대</title>
+  <meta name="description" content="한국노총 노동연대 문의: 박강원 상임본부장, fktu-nodong@gmail.com">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html">한국노총 <span>노동연대</span></a>
+      <nav class="nav" aria-label="주 메뉴">
+        <a href="index.html">홈</a>
+        <a href="about.html">소개</a>
+        <a href="direction.html">활동방향</a>
+        <a href="news/index.html">소식</a>
+        <a href="articles/index.html">지식</a>
+        <a href="contact.html" aria-current="page">문의</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>문의</h1>
+    <p>연대·현장 문의·소식 제보 등은 아래 연락처로 보내 주세요. 이 사이트에는 별도 서버 접수 기능이 없으므로, 이메일을 직접 보내 주시는 방식이 가장 확실합니다.</p>
+
+    <dl class="contact-box">
+      <dt>담당</dt>
+      <dd>한국노총 노동연대 박강원 상임본부장</dd>
+      <dt>이메일</dt>
+      <dd><a href="mailto:fktu-nodong@gmail.com">fktu-nodong@gmail.com</a></dd>
+      <dt>주소</dt>
+      <dd>서울특별시 영등포구 국제금융로6길 26, 한국노총 빌딩 9층 (우 07328)</dd>
+    </dl>
+
+    <div class="note">
+      Gmail 주소는 운영자가 Gmail에서 <strong>fktu-nodong</strong> 계정을 개설한 뒤 사용하는 주소입니다. 사이트에는 주소를 표시해 두었으며, 메일함이 준비되면 해당 주소로 회신이 가능합니다.
+    </div>
+
+    <h2>간단 문의 양식</h2>
+    <p>아래 양식은 브라우저의 메일 앱(mailto)을 엽니다. 메일 앱이 없다면 위 주소로 직접 메일을 보내 주세요.</p>
+
+    <form id="contact-form" action="mailto:fktu-nodong@gmail.com" method="get" enctype="text/plain">
+      <input type="hidden" name="subject" value="[한국노총 노동연대] 웹사이트 문의">
+      <div class="form-group">
+        <label for="name">이름</label>
+        <input type="text" id="name" name="body" placeholder="성함" required>
+      </div>
+      <div class="form-group">
+        <label for="email">회신 이메일</label>
+        <input type="email" id="email" placeholder="you@example.com" required>
+      </div>
+      <div class="form-group">
+        <label for="message">내용</label>
+        <textarea id="message" placeholder="문의 내용을 적어 주세요" required></textarea>
+      </div>
+      <button type="submit" class="btn">이메일로 보내기</button>
+      <p class="form-hint">메일 앱이 열리지 않으면 <a href="mailto:fktu-nodong@gmail.com">fktu-nodong@gmail.com</a>으로 직접 이메일을 보내주세요.</p>
+    </form>
+  </main>
+
+  <script>
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+      var body = '이름: ' + name + '\n회신 이메일: ' + email + '\n\n' + message;
+      var url = 'mailto:fktu-nodong@gmail.com'
+        + '?subject=' + encodeURIComponent('[한국노총 노동연대] 웹사이트 문의')
+        + '&body=' + encodeURIComponent(body);
+      window.location.href = url;
+    });
+  </script>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p><strong>한국노총 노동연대</strong></p>
+      <p>서울특별시 영등포구 국제금융로6길 26, 한국노총 빌딩 9층 (07328)</p>
+      <p><a href="mailto:fktu-nodong@gmail.com">fktu-nodong@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
