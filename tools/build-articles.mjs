@@ -15,6 +15,7 @@ const NAV = (cur) => `<nav class="nav" aria-label="주 메뉴">
         <a href="direction.html">활동방향</a>
         <a href="news/index.html">소식</a>
         <a href="articles/index.html"${cur === "articles" ? ' aria-current="page"' : ""}>지식</a>
+        <a href="board.html">게시판</a>
         <a href="contact.html">문의</a>
       </nav>`;
 
