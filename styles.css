@@ -1,0 +1,39 @@
+/* 한국노총 노동연대 */
+:root{--red:#b91c1c;--red-dark:#991b1b;--ink:#1a1a1a;--muted:#555;--line:#e5e5e5;--bg:#fafafa;--white:#fff;--max:880px;--font:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif}
+*,*::before,*::after{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;font-family:var(--font);font-size:16px;line-height:1.75;color:var(--ink);background:var(--white);word-break:keep-all;overflow-wrap:break-word}
+a{color:var(--red);text-decoration:none}a:hover{text-decoration:underline}
+.site-header{border-bottom:3px solid var(--red);background:var(--white);position:sticky;top:0;z-index:50}
+.header-inner{max-width:var(--max);margin:0 auto;padding:.85rem 1.25rem;display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem}
+.brand{font-weight:700;font-size:1.1rem;color:var(--ink);text-decoration:none}.brand:hover{text-decoration:none;color:var(--red)}.brand span{color:var(--red)}
+.nav{display:flex;flex-wrap:wrap;gap:.35rem 1rem;font-size:.95rem}
+.nav a{color:var(--ink);font-weight:500;text-decoration:none;padding:.2rem 0;border-bottom:2px solid transparent}
+.nav a:hover,.nav a[aria-current=page]{color:var(--red);border-bottom-color:var(--red);text-decoration:none}
+.hero{background:linear-gradient(180deg,#fff5f5 0%,var(--white) 100%);border-bottom:1px solid var(--line);padding:2.5rem 1.25rem 2rem}
+.hero-inner{max-width:var(--max);margin:0 auto}
+.hero h1{margin:0 0 .75rem;font-size:clamp(1.5rem,4vw,2rem);line-height:1.35}
+.hero .lead{margin:0;color:var(--muted);font-size:1.05rem;max-width:40em}
+main{max-width:var(--max);margin:0 auto;padding:2rem 1.25rem 3rem}
+main h1{font-size:1.75rem;margin:0 0 1.25rem;padding-bottom:.6rem;border-bottom:2px solid var(--red)}
+main h2{font-size:1.25rem;margin:2rem 0 .75rem}main h3{font-size:1.05rem;margin:1.5rem 0 .5rem}
+main ul,main ol{padding-left:1.35rem}main li{margin-bottom:.4rem}
+.meta{color:var(--muted);font-size:.9rem;margin:-.5rem 0 1.25rem}
+.badge{display:inline-block;font-size:.75rem;font-weight:600;color:var(--red);background:#fef2f2;border:1px solid #fecaca;padding:.15rem .5rem;border-radius:999px;margin-right:.4rem}
+.card-grid{display:grid;gap:1rem;grid-template-columns:1fr}
+@media(min-width:640px){.card-grid.two{grid-template-columns:1fr 1fr}}
+.card{border:1px solid var(--line);border-radius:8px;padding:1.15rem 1.25rem;background:var(--white)}.card:hover{border-color:#fca5a5}
+.card h3{margin:0 0 .4rem;font-size:1.05rem}.card h3 a{color:var(--ink)}.card h3 a:hover{color:var(--red)}
+.card p{margin:0;color:var(--muted);font-size:.95rem}.card .date{display:block;font-size:.8rem;color:#888;margin-bottom:.35rem}
+.cta{margin-top:2.5rem;padding:1.5rem;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;text-align:center}.cta p{margin:0 0 1rem}
+.btn{display:inline-block;background:var(--red);color:#fff!important;padding:.65rem 1.4rem;border-radius:6px;font-weight:600;text-decoration:none!important;border:none;cursor:pointer;font-size:1rem;font-family:inherit}.btn:hover{background:var(--red-dark)}
+.note{background:var(--bg);border-left:4px solid var(--red);padding:.9rem 1rem;margin:1.25rem 0;font-size:.95rem;color:var(--muted)}
+.source-link{margin-top:1.5rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.95rem}
+.contact-box{border:1px solid var(--line);border-radius:8px;padding:1.25rem;margin-bottom:1.5rem;background:var(--bg)}
+.contact-box dt{font-weight:600;margin-top:.75rem}.contact-box dt:first-child{margin-top:0}.contact-box dd{margin:.2rem 0 0;color:var(--muted)}
+.form-group{margin-bottom:1rem}.form-group label{display:block;font-weight:600;margin-bottom:.35rem;font-size:.95rem}
+.form-group input,.form-group textarea{width:100%;padding:.6rem .75rem;border:1px solid #ccc;border-radius:6px;font-family:inherit;font-size:1rem}
+.form-group textarea{min-height:140px;resize:vertical}.form-hint{font-size:.9rem;color:var(--muted);margin-top:.75rem}
+.article-body p{margin:0 0 1rem}.article-body h2{border-bottom:1px solid var(--line);padding-bottom:.35rem}
+.site-footer{border-top:1px solid var(--line);background:#111;color:#ccc;padding:1.75rem 1.25rem;font-size:.9rem}
+.footer-inner{max-width:var(--max);margin:0 auto}.site-footer strong{color:#fff}.site-footer a{color:#fca5a5}
+.list-plain{list-style:none;padding:0;margin:0}.list-plain li{border-bottom:1px solid var(--line);padding:1rem 0}.list-plain li:first-child{padding-top:0}.list-plain .date{font-size:.85rem;color:#888}
